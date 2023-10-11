@@ -36,7 +36,9 @@ const foods = [
       console.log(food.flavor, food.utensils, food.nutrients);
     });
   }
-  
+
+  const result = foods.filter((food) => food.length > 6);
+  console.log(results);
   
   console.log("food names");
   printNames();
