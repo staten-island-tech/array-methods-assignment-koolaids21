@@ -40,3 +40,6 @@ function printProperties() {
 
 console.log("food names");
 printNames();
+
+console.log("food properties");
+printProperties();
