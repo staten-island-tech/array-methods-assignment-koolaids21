@@ -2,26 +2,30 @@ const foods = [
   {
     name: "pizza",
     flavor: "salty",
+    price: "6.99",
     utensils: "hands",
-    nutreints: "fats",
+    spicy: false,
   },
   {
     name: "spicy chicken sandwich",
     flavor: "spicy",
+    price: "6.99",
     utensils: "hands",
-    nutreints: "protein",
+    spicy: true,
   },
   {
     name: "rice",
-    flavor: "non",
-    utensils: "spoon",
-    nutreints: "carbohydrate",
+    flavor: "spicy",
+    price: "1.99",
+    utensils: "fork",
+    spicy: false,
   },
   {
     name: "fries",
     flavor: "salty",
+    price: "2.99",
     utensils: "hands",
-    nutrients: "potassium",
+    spicy: false,
   },
 ];
 
@@ -33,9 +37,15 @@ function printNames() {
 
 function printProperties() {
   foods.forEach((food) => {
-    console.log(food.flavor, food.utensils, food.nutrients);
+    console.log(food.flavor, food.price, food.utensils);
   });
 }
+
+
+
+
+function spicything
+ filter((spicy) => foods.spicy);
 
 
 console.log("food names");
@@ -43,3 +53,6 @@ printNames();
 
 console.log("food properties");
 printProperties();
+
+console.log("spicy or not");
+spicything();
