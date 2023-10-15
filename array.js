@@ -28,6 +28,14 @@ const foods = [
     spicy: false,
   },
 ];
+function filterSpicyFoods(isSpicy) {
+  console.log(`${isSpicy ? 'spicy foods:' : 'nonspicy foods:'}`);
+  foods
+    .filter((food) => food.spicy === isSpicy)
+    .forEach((food) => console.log(food.name));
+}
+
+
 
 function printNames() {
   foods.forEach((food) => {
@@ -41,12 +49,6 @@ function printProperties() {
   });
 }
 
-function filterSpicyFoods(isSpicy) {
-  console.log(`${isSpicy ? 'spicy foods:' : 'nonspicy foods:'}`);
-  foods
-    .filter((food) => food.spicy === isSpicy)
-    .forEach((food) => console.log(food.name));
-}
 
 console.log("food names:");
 printNames();
