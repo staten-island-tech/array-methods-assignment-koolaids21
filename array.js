@@ -41,18 +41,18 @@ function printProperties() {
   });
 }
 
+function filterSpicyFoods(isSpicy) {
+  console.log(`${isSpicy ? 'spicy foods:' : 'nonspicy foods:'}`);
+  foods
+    .filter((food) => food.spicy === isSpicy)
+    .forEach((food) => console.log(food.name));
+}
 
-
-
-function spicything
- filter((spicy) => foods.spicy);
-
-
-console.log("food names");
+console.log("food names:");
 printNames();
 
-console.log("food properties");
+console.log("food properties:");
 printProperties();
 
-console.log("spicy or not");
-spicything();
+filterSpicyFoods(true); 
+filterSpicyFoods(false);
