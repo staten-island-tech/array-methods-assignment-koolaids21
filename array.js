@@ -45,16 +45,35 @@ function printNames() {
 
 function printProperties() {
   foods.forEach((food) => {
-    console.log(food.flavor, food.price, food.utensils);
+    console.log(food.flavor,);
   });
 }
+
+function printPrice() {
+  foods.forEach((food) => {
+    console.log(food.price);
+  });
+}
+function printUtensils() {
+  foods.forEach((food) => {
+    console.log(food.utensils);
+  });
+}
+
+
 
 
 console.log("food names:");
 printNames();
 
-console.log("food properties:");
+console.log("food flavors:");
 printProperties();
+console.log("food prices:");
+printPrice();
+console.log("food utensils:");
+printUtensils();
 
-filterSpicyFoods(true); 
+
+filterSpicyFoods(true);
 filterSpicyFoods(false);
+
