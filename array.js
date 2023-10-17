@@ -37,42 +37,26 @@ function filterSpicyFoods(isSpicy) {
 
 
 
-function printNames() {
-  foods.forEach((food) => {
-    console.log(food.name);
-  });
-}
 
-function printProperties() {
-  foods.forEach((food) => {
-    console.log(food.flavor,);
-  });
-}
-
-function printPrice() {
-  foods.forEach((food) => {
-    console.log(food.price);
-  });
-}
-function printUtensils() {
-  foods.forEach((food) => {
-    console.log(food.utensils);
-  });
-}
+foods.forEach((food) => {
+  console.log(food.name);
+});
 
 
 
+foods.forEach((food) => {
+  console.log(food.flavor,);
+});
 
-console.log("food names:");
-printNames();
 
-console.log("food flavors:");
-printProperties();
-console.log("food prices:");
-printPrice();
-console.log("food utensils:");
-printUtensils();
+foods.forEach((food) => {
+  console.log(food.price);
+});
 
+
+foods.forEach((food) => {
+  console.log(food.utensils);
+});
 
 filterSpicyFoods(true);
 filterSpicyFoods(false);
